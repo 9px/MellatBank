@@ -42,7 +42,7 @@ class MellatBank {
 	
 	
 	function __construct() {
-		require_once basename(__FILE__) . '/lib/nusoap.php' ;
+		require_once basename(__FILE__) . '/nusoap.php' ;
 	}
 	
 	
