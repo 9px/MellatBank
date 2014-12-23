@@ -39,6 +39,26 @@ class MellatBank {
 	 * @var string
 	 */
 	private $password = '' ;
+	
+	
+	/**
+	 * __cunstruct
+	 *
+	 * @terminal : bankmellat terminal (int)
+	 * @username : bankmellat username (string)
+	 * @password : bankmellat password (string)
+	 */
+	public function __cunstruct($terminal = '', $username = '', $password = '')
+	{
+		if(!empty($terminal))
+			$this->terminal = $terminal;
+			
+		if(!empty($username))
+			$this->username = $username;
+			
+		if(!empty($password))
+			$this->password = $password;
+	}
 
 	
 	/**
@@ -122,7 +142,7 @@ class MellatBank {
 	 * @since   2014-12-10
 	 * @author  Ahmad Rezaei <info@freescript.ir>
 	 */
-	public function verifyPayment($params) 
+	protected function verifyPayment($params) 
 	{
 		$client = new nusoap_client( 'https://bpm.shaparak.ir/pgwchannel/services/pgw?wsdl' ) ;
 		$orderId = $params["SaleOrderId"];
@@ -176,7 +196,7 @@ class MellatBank {
 	 * @since   2014-12-10
 	 * @author  Ahmad Rezaei <info@freescript.ir>
 	 */
-	public function settlePayment($params) 
+	protected function settlePayment($params) 
 	{
 		$client = new nusoap_client( 'https://bpm.shaparak.ir/pgwchannel/services/pgw?wsdl' ) ;
 		$orderId = $params["SaleOrderId"];

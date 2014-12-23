@@ -1,8 +1,11 @@
 <?php
 
-  require_once('MellatBank.php');
+  /*** نمونه کد استفاده از کتابخانه ***/
+  require_once(__DIR__ . '/MellatBank.php');
   error_reporting(E_ALL);
-  $mellat = new MellatBank();
+  
+  /*** ساختن یک آبجکت جدید ***/
+  $mellat = new MellatBank('123456', 'test', 'test');
   
   /**
    * پرداخت مبلغ
