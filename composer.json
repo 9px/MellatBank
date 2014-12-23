@@ -1,1 +1,17 @@
  
+{
+    "name": "parsa53/MellatBank",
+    "description": "MellatBank re-packaged for Packagist/Composer",
+    "require": {
+   		"fergusean/nusoap": "*"
+   	},
+    "authors": [
+        {
+            "name": "ahmad m.rezaei",
+            "homepage": "http://shopscript.ir"
+        }
+    ],
+    "autoload": {
+    	"classmap": ["MellatBank.php"]
+    }
+}
