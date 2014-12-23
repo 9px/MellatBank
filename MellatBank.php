@@ -39,12 +39,7 @@ class MellatBank {
 	 * @var string
 	 */
 	private $password = '' ;
-	
-	
-	function __construct() {
-		require_once basename(__FILE__) . '/nusoap.php' ;
-	}
-	
+
 	
 	/**
 	 * تابع پرداخت
