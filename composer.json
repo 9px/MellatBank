@@ -1,6 +1,6 @@
  
 {
-    "name": "parsa53/mellatBank",
+    "name": "parsa53/mellatbank",
     "description": "MellatBank re-packaged for Packagist/Composer",
     "require": {
    		"fergusean/nusoap": "*"
